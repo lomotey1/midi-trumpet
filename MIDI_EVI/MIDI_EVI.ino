@@ -1,4 +1,4 @@
-
+#include "ValveBlock.h"
 #include <MIDI.h>
 #define MIDI_PITCHBEND_MAX   8191
 #define MIDI_PITCHBEND_MIN   -8192
@@ -17,12 +17,12 @@ int currentNote;
 int lastNoteOn;
 
 //Breath sensor
-const int breath = A0;
+const int breathPin = A0;
 int intensity = 0;
 int last = 0;
 int reading;
 int sensorIni;
-const int breathPin = A0;
+
 
 //Joystick
 
@@ -67,8 +67,8 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  reading = constrain(analogRead(breathPin) - sensorIni, 0, 800);
-  intensity = map(reading, 0, 800, 0, 127);
+  reading = constrain(analogRead(breathPin) - sensorIni, 0, 380); //was originally 800 max
+  intensity = map(reading, 0, 380, 0, 127);
   currentNote = valves.getMIDINote();
 
     //No breath, no note

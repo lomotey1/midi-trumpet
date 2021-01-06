@@ -90,5 +90,4 @@ int ValveBlock::getMIDINote() {
     }
   }
   return midinote;
-}
 };

@@ -1,6 +1,7 @@
 #ifndef MY_VALVEBLOCK_H
 #define MY_VALVEBLOCK_H
 #include <Arduino.h>
+#include "Button.h"
 
 class ValveBlock {
   private:
