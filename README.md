@@ -8,6 +8,8 @@ This is the code for my EVI. It is made with my instrument in mind but I want it
 
 ## Usage
 
-To be added
+Link of it in action: https://www.instagram.com/p/CJNMXOEA4kh/
+
+List of parts used: TBD
 
 ---
